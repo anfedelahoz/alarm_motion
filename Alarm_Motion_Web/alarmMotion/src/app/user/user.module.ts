@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserLandingComponent } from './user-landing/user-landing.component';
+import { UserRegisterComponent } from './user-register/user-register.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 
 
@@ -8,8 +10,12 @@ import { UserLandingComponent } from './user-landing/user-landing.component';
   
   imports: [CommonModule],
   declarations: [
-    UserLandingComponent
+    UserLandingComponent,
+    UserRegisterComponent,
+    UserLoginComponent,
   ],
-  exports: [UserLandingComponent]
+  exports: [UserLandingComponent, UserRegisterComponent]
 })
+
+
 export class UserModule { }
