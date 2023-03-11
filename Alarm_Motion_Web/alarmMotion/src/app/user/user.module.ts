@@ -14,7 +14,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
     UserRegisterComponent,
     UserLoginComponent,
   ],
-  exports: [UserLandingComponent, UserRegisterComponent]
+  exports: [UserLandingComponent, UserRegisterComponent, UserLoginComponent]
 })
 
 
