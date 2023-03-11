@@ -8,6 +8,6 @@ import { AlarmListComponent } from './alarm-list/alarm-list.component';
 @NgModule({
   imports: [CommonModule],
   declarations: [AlarmCreateComponent, AlarmListComponent],
-  exports: [AlarmCreateComponent]
+  exports: [AlarmCreateComponent, AlarmListComponent]
 })
 export class AlarmModule { }
