@@ -50,7 +50,7 @@ public class Login extends AppCompatActivity {
 
     // the function which triggered when the VALIDATE button is clicked
     // which validates the email address entered by the user
-    public boolean emailValidator(EditText etMail) {
+     boolean emailValidator(EditText etMail) {
 
         // extract the entered data from the EditText
         String emailToText = etMail.getText().toString();
@@ -70,7 +70,7 @@ public class Login extends AppCompatActivity {
 
 
 
-    public boolean passValidator(EditText etPass) {
+     boolean passValidator(EditText etPass) {
 
         // extract the entered data from the EditText
         String emailToText = etPass.getText().toString();
