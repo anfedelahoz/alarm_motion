@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 import { AlarmModule } from './alarm/alarm.module';
 import { AppHeaderModule } from './app-header/app-header.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,7 +16,8 @@ import { UserModule } from "./user/user.module";
         AppRoutingModule,
         AppHeaderModule,
         UserModule,
-        AlarmModule
+        AlarmModule,
+        RouterModule
     ]
 })
 export class AppModule { }
