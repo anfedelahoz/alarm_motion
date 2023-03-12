@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AlarmaMotion</string>
+    <string name="ciudad">Santa Marta</string>
+    <string name="fecha">09 Feb, 2023</string>
+    <string name="hora">02:00 PM</string>
+    <string name="txtIniciarSesion">INICIAR SESIÓN</string>
+    <string name="txtRegistrarme">REGISTRARME</string>
+</resources>

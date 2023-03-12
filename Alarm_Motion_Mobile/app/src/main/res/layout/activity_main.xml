@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AlarMotionStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/alarm_motio"
+        android:layout_width="222dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-18sp"
+        android:text="Alarm Motion"
+        android:textAppearance="@style/alarm_motio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- 09 Feb, 2023 -->
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="244dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-4sp"
+        android:text="@string/fecha"
+        android:textAppearance="@style/titulo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hora" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="182dp"
+        android:layout_height="203dp"
+        android:layout_marginTop="54dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_motio"
+        tools:srcCompat="@drawable/landingpage5" />
+
+
+    <TextView
+        android:id="@+id/santa_marta"
+        android:layout_width="132dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-4sp"
+        android:text="@string/ciudad"
+        android:textAppearance="@style/titulo3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/hora"
+        android:layout_width="249dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-11sp"
+        android:text="@string/hora"
+        android:textAppearance="@style/titulo1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/santa_marta" />
+
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        style="@style/AlarMotionStyle"
+        android:layout_width="139dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/txtIniciarSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fecha" />
+
+
+    <Button
+        android:id="@+id/btnRegistrarme"
+        style="@style/AlarMotionStyle"
+        android:layout_width="139dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_bg2"
+        android:text="@string/txtRegistrarme"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
