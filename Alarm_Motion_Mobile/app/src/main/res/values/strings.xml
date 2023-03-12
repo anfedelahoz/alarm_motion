@@ -8,4 +8,7 @@
     <string name="txtIniciarsesion">Iniciar sesión</string>
     <string name="txtIngreseEmail">Ingrese e-mail</string>
     <string name="txtIngreseContrasena">Ingrese contraseña</string>
+    <string name="txtRegistro">Registro</string>
+    <string name="txtIngreseUserNameAlias">Ingrese nombre o alias</string>
+    <string name="txtRepetirIngreseContrasena">Repetir Contraseña</string>
 </resources>

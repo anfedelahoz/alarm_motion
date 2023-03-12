@@ -4,6 +4,141 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registro">
+    tools:context=".Registro"
+    style="@style/AlarMotionStyle"
+    >
+
+
+
+    <TextView
+        android:id="@+id/alarm_motio"
+        android:layout_width="222dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-18sp"
+        android:text="Alarm Motion"
+        android:textAppearance="@style/alarm_motio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="36dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        app:layout_constraintEnd_toStartOf="@+id/alarm_motio"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="325dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="54dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_motio"
+        tools:srcCompat="@drawable/registroimage" />
+
+
+    <TextView
+        android:id="@+id/textRegistro"
+        android:layout_width="143dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-4sp"
+        android:text="@string/txtRegistro"
+        android:textAppearance="@style/titulo4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/txtIngreseUserNameAlias"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRegistro" />
+
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/txtIngreseEmail"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserName" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/txtIngreseContrasena"
+        android:inputType="textPassword"
+        android:paddingHorizontal="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPasswordRepetir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/txtRepetirIngreseContrasena"
+        android:inputType="textPassword"
+        android:paddingHorizontal="10dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+
+    <Button
+        android:id="@+id/btnRegistrarme"
+        style="@style/AlarMotionStyle"
+        android:layout_width="139dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_bg2"
+        android:text="@string/txtRegistrarme"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordRepetir" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

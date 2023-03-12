@@ -69,6 +69,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToRegistroActivity(View view) {
+        Intent intent = new Intent(this, Registro.class);
+        startActivity(intent);
+    }
+
 
 
 
