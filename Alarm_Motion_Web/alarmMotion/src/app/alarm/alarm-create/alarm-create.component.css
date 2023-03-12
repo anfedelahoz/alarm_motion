@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400');
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 .create-form{
     margin: 5%;
