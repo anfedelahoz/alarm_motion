@@ -67,6 +67,13 @@
         </item>
 
     </style>
+    <!-- styles.xml -->
+    <style name="titulo4">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#F7F9F2</item>
+    </style>
+
+
 
 </resources>
 

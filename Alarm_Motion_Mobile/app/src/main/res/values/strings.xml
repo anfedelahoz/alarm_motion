@@ -5,4 +5,7 @@
     <string name="hora">02:00 PM</string>
     <string name="txtIniciarSesion">INICIAR SESIÓN</string>
     <string name="txtRegistrarme">REGISTRARME</string>
+    <string name="txtIniciarsesion">Iniciar sesión</string>
+    <string name="txtIngreseEmail">Ingrese e-mail</string>
+    <string name="txtIngreseContrasena">Ingrese contraseña</string>
 </resources>
