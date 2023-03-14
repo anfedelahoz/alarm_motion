@@ -2,8 +2,292 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AlarMotionStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ListarAlarmas">
+
+    <TextView
+        android:id="@+id/alarm_motio"
+        android:layout_width="222dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-18sp"
+        android:text="@string/txtListadosAlarmas"
+        android:textAppearance="@style/alarm_motio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="36dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        app:layout_constraintEnd_toStartOf="@+id/alarm_motio"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButtonAdd"
+        android:layout_width="36dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:onClick="goToAddAlarm"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="88dp"
+       >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="#3C6255">
+
+            <TextView
+                android:id="@+id/twTitulo_cv1"
+                android:layout_width="246dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:lineSpacingExtra="5sp"
+                android:text="Despertar"
+                android:textAppearance="@style/titulo1" />
+
+            <TextView
+                android:id="@+id/twHora_cv1"
+                android:layout_width="246dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5sp"
+                android:text="6:00 A.M."
+                android:textAppearance="@style/alarm_motio"
+                app:layout_constraintTop_toBottomOf="@+id/twTitulo_cv1" />
+
+            <TextView
+                android:id="@+id/twDias_cv1"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="70dp"
+                android:lineSpacingExtra="5sp"
+                android:text="lun  mar  mier  jue  vie"
+                android:textAppearance="@style/titulo4"
+                app:layout_constraintTop_toBottomOf="@+id/twHora_cv1" />
+
+            <Switch
+                android:id="@+id/swActivoAlarma_cv2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="40dp"
+                android:minHeight="80dp"
+                android:switchMinWidth="70dp"
+                app:layout_constraintStart_toEndOf="@+id/twHora_cv2" />
+            />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4CAF50"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="#3C6255">>
+            <TextView
+                android:id="@+id/twTitulo_cv2"
+                android:layout_width="246dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:lineSpacingExtra="5sp"
+                android:text="Shopping"
+                android:textAppearance="@style/titulo1" />
+
+            <TextView
+                android:id="@+id/twHora_cv2"
+                android:layout_width="246dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5sp"
+                android:text="9:30 A.M."
+                android:textAppearance="@style/alarm_motio"
+                app:layout_constraintTop_toBottomOf="@+id/twTitulo_cv1" />
+
+            <TextView
+                android:id="@+id/twDias_cv2"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="70dp"
+                android:lineSpacingExtra="5sp"
+                android:text="lun   mier   vie"
+                android:textAppearance="@style/titulo4"
+                app:layout_constraintTop_toBottomOf="@+id/twHora_cv1" />
+
+            <Switch
+                android:id="@+id/swActivoAlarma_cv22"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="40dp"
+                android:minHeight="80dp"
+                android:switchMinWidth="70dp"
+                app:layout_constraintStart_toEndOf="@+id/twHora_cv1" />
+            />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="#3C6255">
+
+            <TextView
+                android:id="@+id/twTitulo_cv3"
+                android:layout_width="246dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:lineSpacingExtra="5sp"
+                android:text="Almuerzo"
+                android:textAppearance="@style/titulo1" />
+
+            <TextView
+                android:id="@+id/twHora_cv3"
+                android:layout_width="246dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5sp"
+                android:text="2:30 P.M."
+                android:textAppearance="@style/alarm_motio"
+                app:layout_constraintTop_toBottomOf="@+id/twTitulo_cv3" />
+
+            <TextView
+                android:id="@+id/twDias_cv3"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="70dp"
+                android:lineSpacingExtra="5sp"
+                android:text="lun  mar  mier  jue  vie"
+                android:textAppearance="@style/titulo4"
+                app:layout_constraintTop_toBottomOf="@+id/twHora_cv3" />
+
+            <Switch
+                android:id="@+id/swActivoAlarma_cv3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="40dp"
+                android:minHeight="80dp"
+                android:switchMinWidth="70dp"
+                app:layout_constraintStart_toEndOf="@+id/twHora_cv3" />
+            />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="#3C6255">
+
+            <TextView
+                android:id="@+id/twTitulo_cv4"
+                android:layout_width="246dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:lineSpacingExtra="5sp"
+                android:text="Reunión"
+                android:textAppearance="@style/titulo1" />
+
+            <TextView
+                android:id="@+id/twHora_cv4"
+                android:layout_width="246dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="5sp"
+                android:text="12:30 P.M."
+                android:textAppearance="@style/alarm_motio"
+                app:layout_constraintTop_toBottomOf="@+id/twTitulo_cv4" />
+
+            <TextView
+                android:id="@+id/twDias_cv4"
+                android:layout_width="246dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="70dp"
+                android:lineSpacingExtra="5sp"
+                android:text="mar  vie"
+                android:textAppearance="@style/titulo4"
+                app:layout_constraintTop_toBottomOf="@+id/twHora_cv4" />
+
+            <Switch
+                android:id="@+id/swActivoAlarma_cv4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="40dp"
+                android:checked="true"
+                android:minHeight="80dp"
+                android:switchMinWidth="70dp"
+                android:trackTint="#FFFFFF"
+                android:trackTintMode="add"
+                app:layout_constraintStart_toEndOf="@+id/twHora_cv4" />
+            />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

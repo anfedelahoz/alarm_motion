@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AlarMotionStyle"
+    tools:context=".CreateAlarma">
+
+    <TextView
+        android:id="@+id/alarm_motio"
+        android:layout_width="222dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-18sp"
+        android:text="@string/txtListadosAlarmas"
+        android:textAppearance="@style/alarm_motio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="36dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        app:layout_constraintEnd_toStartOf="@+id/alarm_motio"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
+
+        android:background="#F7F9F2 "
+
+        android:textSize="52sp"
+        android:theme="@style/styletimepicker"
+        android:timePickerMode="spinner"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_motio" />
+
+    <TextView
+        android:id="@+id/twDias_cv1"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="-130dp"
+        android:layout_marginTop="25dp"
+        android:lineSpacingExtra="5sp"
+        android:text="Repetir"
+        android:textAppearance="@style/titulo4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
+
+    <LinearLayout
+        android:id="@+id/lydiasSemanas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="96dp"
+        android:gravity="center_horizontal"
+        android:paddingVertical="100dp"
+        android:paddingTop="-100dp"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+            android:id="@+id/btnlun"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:width="30dp"
+            android:text="lun" />
+
+        <Button
+            android:id="@+id/btnmar"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="mar" />
+
+        <Button
+            android:id="@+id/btnmie"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="mie" />
+
+        <Button
+            android:id="@+id/btnjue"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="jue" />
+
+        <Button
+            android:id="@+id/btnvie"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="vie" />
+
+        <Button
+            android:id="@+id/btnsab"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="sab" />
+
+        <Button
+            android:id="@+id/btndom"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="dom" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/twvibracion"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="-130dp"
+        android:layout_marginTop="125dp"
+        android:lineSpacingExtra="5sp"
+        android:text="Vibración"
+        android:textAppearance="@style/titulo4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
+
+    <LinearLayout
+        android:id="@+id/lyvibracion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="220dp"
+        android:gravity="center_horizontal"
+        android:paddingVertical="200dp"
+        android:paddingTop="-100dp"
+        app:layout_constraintTop_toBottomOf="@+id/lydiasSemanas"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+            android:id="@+id/btninactivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:width="30dp"
+            android:text="inactivo" />
+
+        <Button
+            android:id="@+id/btnalto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="alto" />
+
+        <Button
+            android:id="@+id/btnmedio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="medio" />
+
+        <Button
+            android:id="@+id/btnbajo"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="bajo" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,4 +11,6 @@
     <string name="txtRegistro">Registro</string>
     <string name="txtIngreseUserNameAlias">Ingrese nombre o alias</string>
     <string name="txtRepetirIngreseContrasena">Repetir Contraseña</string>
+    <string name="txtListadosAlarmas">Alarmas</string>
+    <string name="txtCrearAlarmas">Crear Alarma</string>
 </resources>
