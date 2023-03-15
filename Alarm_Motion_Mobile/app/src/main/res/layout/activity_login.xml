@@ -30,12 +30,12 @@
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/btn_bg"
+        android:onClick="goToMainActivity"
         app:layout_constraintEnd_toStartOf="@+id/alarm_motio"
         app:layout_constraintHorizontal_bias="0.267"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/homeAsUpIndicator"
-        android:onClick="goToMainActivity"/>
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
 
     <ImageView
         android:id="@+id/imageView"

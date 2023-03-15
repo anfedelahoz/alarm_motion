@@ -43,13 +43,12 @@
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/btn_bg"
+        android:onClick="goToAddAlarm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add"
-        android:onClick="goToAddAlarm"
-        />
+        app:srcCompat="@drawable/baseline_add_24" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -137,7 +136,8 @@
             app:cardElevation="4dp"
             app:cardCornerRadius="8dp"
             app:cardUseCompatPadding="true"
-            app:cardBackgroundColor="#3C6255">>
+            app:cardBackgroundColor="#3C6255"
+           >
             <TextView
                 android:id="@+id/twTitulo_cv2"
                 android:layout_width="246dp"

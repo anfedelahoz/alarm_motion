@@ -13,7 +13,7 @@
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:gravity="center_horizontal|top"
         android:lineSpacingExtra="-18sp"
         android:text="@string/txtCrearAlarmas"
@@ -29,13 +29,12 @@
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/btn_bg"
+        android:onClick="goToListarAlarmas"
         app:layout_constraintEnd_toStartOf="@+id/alarm_motio"
         app:layout_constraintHorizontal_bias="0.267"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/homeAsUpIndicator"
-        android:onClick="goToListarAlarmas"
-        />
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
 
 
     <ImageButton
@@ -43,22 +42,22 @@
         android:layout_width="36dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
-
+        android:background="@drawable/btn_bg"
         android:onClick="goToOkAlarm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/checkbox_on_background" />
+        app:srcCompat="@drawable/baseline_done_24" />
 
     <TimePicker
         android:id="@+id/timePicker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="257dp"
+        android:layout_height="195dp"
         android:layout_gravity="center"
         android:layout_marginEnd="16dp"
 
-        android:background="#F7F9F2 "
+        android:background="@drawable/pickertime"
 
         android:textSize="52sp"
         android:theme="@style/styletimepicker"
@@ -86,7 +85,7 @@
         android:id="@+id/lydiasSemanas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="-10dp"
         android:gravity="center_horizontal"
         android:paddingVertical="100dp"
         android:paddingTop="-100dp"
@@ -95,53 +94,60 @@
 
         <Button
             android:id="@+id/btnlun"
-            android:layout_width="58dp"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:width="30dp"
-            android:text="lun" />
+            android:text="lun"
+
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnmar"
             android:layout_width="56dp"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="mar" />
+            android:text="mar"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnmie"
-            android:layout_width="51dp"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="mie" />
+            android:text="mie"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnjue"
-            android:layout_width="52dp"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="jue" />
+            android:text="jue"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnvie"
-            android:layout_width="49dp"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="vie" />
+            android:text="vie"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnsab"
             android:layout_width="56dp"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="sab" />
+            android:text="sab"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btndom"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="dom" />
+            android:text="dom"
+            android:textSize="14sp" />
     </LinearLayout>
 
 
@@ -163,7 +169,7 @@
         android:id="@+id/lyvibracion"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="150dp"
         android:gravity="center_horizontal"
         android:paddingVertical="00dp"
         android:paddingTop="-100dp"
@@ -172,32 +178,35 @@
 
         <Button
             android:id="@+id/btninactivo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:width="30dp"
-            android:text="inactivo" />
+            android:text="inactivo"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnalto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="alto" />
+            android:text="alto"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnmedio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="medio" />
+            android:text="medio"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnbajo"
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="bajo" />
+            android:text="bajo"
+            android:textSize="14sp" />
 
 
     </LinearLayout>
@@ -209,7 +218,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginStart="-130dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:lineSpacingExtra="5sp"
         android:text="Sonido"
         android:textAppearance="@style/titulo4"
@@ -221,7 +230,7 @@
         android:id="@+id/lysonido"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="300dp"
         android:gravity="center_horizontal"
         android:paddingVertical="00dp"
         android:paddingTop="-100dp"
@@ -232,32 +241,35 @@
 
         <Button
             android:id="@+id/btninactivosonido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:width="30dp"
-            android:text="inactivo" />
+            android:text="inactivo"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnaltosonido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="alto" />
+            android:text="alto"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnmediosonido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="medio" />
+            android:text="medio"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnbajosonido"
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="bajo" />
+            android:text="bajo"
+            android:textSize="14sp" />
 
 
     </LinearLayout>
@@ -297,6 +309,17 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
 
-
+    <Button
+        android:id="@+id/btnGuardar"
+        style="@style/AlarMotionStyle"
+        android:layout_width="141dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="goToOkAlarm"
+        android:text="@string/txtGuardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDuracionAlarma" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

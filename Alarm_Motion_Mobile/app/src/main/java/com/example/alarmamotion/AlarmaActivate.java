@@ -18,4 +18,10 @@ public class AlarmaActivate extends AppCompatActivity {
         Intent intent = new Intent(this, ListarAlarmas.class);
         startActivity(intent);
     }
+
+
+    public void  goToAlarmaCreated(View view) {
+        Intent intent = new Intent(this, AlarmaCreated.class);
+        startActivity(intent);
+    }
 }

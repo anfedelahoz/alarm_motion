@@ -170,6 +170,11 @@ public class CreateAlarma extends AppCompatActivity  implements View.OnClickList
         startActivity(intent);
     }
 
+    public void  goToAlarmaActivate(View view) {
+        Intent intent = new Intent(this, AlarmaActivate.class);
+        startActivity(intent);
+    }
+
 
 
 }

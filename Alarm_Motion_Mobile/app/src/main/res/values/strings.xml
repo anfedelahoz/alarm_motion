@@ -16,8 +16,8 @@
     <string name="txtCeluarContactoConfianza">Número celular contacto confianza</string>
     <string name="txtMensajeExitoAlarma">Éxito</string>
     <string name="txtAlarmaSonara">Alarma Sonará a las:</string>
-    <string name="txtPosponerAlarma">Posponer 10 Min:</string>
-    <string name="txtDesactivarAlarma">Desactivar:</string>
+    <string name="txtPosponerAlarma">Posponer 10 Min</string>
+    <string name="txtDesactivarAlarma">Desactivar</string>
     <string name="txtGuardar">Guardar</string>
     <string name="title_activity_ok_alarma">OkAlarma</string>
 
