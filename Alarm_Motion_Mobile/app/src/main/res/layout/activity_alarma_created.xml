@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmaCreated"
+    style="@style/AlarMotionStyle"
+    >
+
+
+    <TextView
+        android:id="@+id/alarm_motio"
+        android:layout_width="222dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-18sp"
+        android:text="@string/txtMensajeExitoAlarma"
+        android:textAppearance="@style/alarm_motio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="36dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg"
+        app:layout_constraintEnd_toStartOf="@+id/alarm_motio"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        android:onClick="goToListarAlarm"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="328dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_motio"
+        tools:srcCompat="@drawable/okalarma" />
+
+    <TextView
+        android:id="@+id/twTitulo_cv2"
+        android:layout_width="293dp"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/txtAlarmaSonara"
+        android:textAppearance="@style/titulo1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F44336"
+        app:cardBackgroundColor="#3C6255"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toBottomOf="@+id/twTitulo_cv2"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/twHora_cv4"
+            android:layout_width="367dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:lineSpacingExtra="5sp"
+            android:text="Trabajo \n 5:10 A.M."
+            android:textAlignment="center"
+            android:textAppearance="@style/alarm_motio"
+            app:layout_constraintTop_toBottomOf="@+id/twTitulo_cv4" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/volver"
+        style="@style/AlarMotionStyle"
+        android:layout_width="139dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/btn_bg2"
+        android:text="Volver"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twTitulo_cv2"
+        android:onClick="goToListarAlarm"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
