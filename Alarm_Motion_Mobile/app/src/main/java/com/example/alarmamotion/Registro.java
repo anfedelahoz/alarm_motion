@@ -109,9 +109,9 @@ public class Registro extends AppCompatActivity {
             return  false;
         }
         else {
-            Toast.makeText(this, "algo extraño sucedio en la validación!", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "algo extraño sucedio en la validación!", Toast.LENGTH_SHORT).show();
 
-            return  false;
+            return  true;
         }
 
 
@@ -136,4 +136,10 @@ public class Registro extends AppCompatActivity {
         }
     }
 
+
+
+    public void goToMainActivity(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }

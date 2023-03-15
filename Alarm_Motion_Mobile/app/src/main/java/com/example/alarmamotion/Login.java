@@ -90,7 +90,14 @@ public class Login extends AppCompatActivity {
 
 
 
+    public void goToMainActivity(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 
-
+    public void  goToRegistro (View view) {
+        Intent intent = new Intent(this, Registro.class);
+        startActivity(intent);
+    }
 
 }

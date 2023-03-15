@@ -10,7 +10,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TimePicker;
 
-public class CreateAlarma extends AppCompatActivity  implements View.OnClickListener{
+
+
+
+
+public class EditarAlarma extends  AppCompatActivity  implements View.OnClickListener{
+
     private TimePicker timePicker1;
     private Button[] btn = new Button[7];
 
@@ -26,11 +31,10 @@ public class CreateAlarma extends AppCompatActivity  implements View.OnClickList
     private int[] btn_id_vibracion = {R.id.btninactivo, R.id.btnalto, R.id.btnmedio, R.id.btnbajo};
     private int[] btn_id_sonido = {R.id.btninactivosonido, R.id.btnaltosonido, R.id.btnmediosonido, R.id.btnbajosonido};
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_alarma);
+        setContentView(R.layout.activity_editar_alarma);
         timePicker1 = (TimePicker) findViewById(R.id.timePicker);
 
 
@@ -93,7 +97,7 @@ public class CreateAlarma extends AppCompatActivity  implements View.OnClickList
                 setFocus(btn_unfocus, btn[6]);
                 break;
 
-                /////////Vibracion///////////
+            /////////Vibracion///////////
 
             case R.id.btninactivo:
                 setFocusVibracion(btn_unfocus_vibracion, btnVibracion[0]);
@@ -165,11 +169,10 @@ public class CreateAlarma extends AppCompatActivity  implements View.OnClickList
     }
 
 
-    public void goToListarAlarmas(View view) {
+    public void  goToListarAlarmas (View view) {
         Intent intent = new Intent(this, ListarAlarmas.class);
         startActivity(intent);
     }
-
-
-
 }
+
+

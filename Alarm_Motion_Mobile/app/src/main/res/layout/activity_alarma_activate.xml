@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/AlarMotionStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".AlarmaActivate" style="@style/AlarMotionStyle"
+    >
 
 
     <TextView
@@ -17,7 +17,7 @@
         android:layout_marginTop="30dp"
         android:gravity="center_horizontal|top"
         android:lineSpacingExtra="-18sp"
-        android:text="Alarm Motion"
+        android:text="Alarma"
         android:textAppearance="@style/alarm_motio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,65 +35,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?attr/homeAsUpIndicator"
-        android:onClick="goToMainActivity"/>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="325dp"
-        android:layout_height="163dp"
-        android:layout_marginTop="54dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alarm_motio"
-        tools:srcCompat="@drawable/loginimage"
-        android:onClick="goToRegistro"
+        android:onClick="goToListarAlarmas"
         />
 
 
     <TextView
-        android:id="@+id/iniciar_ses"
-        android:layout_width="143dp"
-        android:layout_height="42dp"
+        android:id="@+id/twTitulo_cv2"
+        android:layout_width="293dp"
+        android:layout_height="39dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="25dp"
-        android:gravity="center_horizontal|top"
-        android:lineSpacingExtra="-4sp"
-        android:text="@string/txtIniciarsesion"
-        android:textAppearance="@style/titulo4"
+        android:layout_marginTop="100dp"
+        android:lineSpacingExtra="5sp"
+        android:text="Despierta es hora de:"
+        android:textAppearance="@style/titulo1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/alarm_motio" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:hint="@string/txtIngreseEmail"
-        android:inputType="textEmailAddress"
-        android:paddingHorizontal="10dp"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iniciar_ses" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAlarma"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:hint="@string/txtIngreseContrasena"
-        android:inputType="textPassword"
-        android:paddingHorizontal="10dp"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        android:layout_marginTop="20dp"
+        android:background="#F44336"
+        app:cardBackgroundColor="#3C6255"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toBottomOf="@+id/twTitulo_cv2"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/twHora_cv4"
+            android:layout_width="367dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:lineSpacingExtra="5sp"
+            android:text="Trabajo \n 5:10 A.M."
+            android:textAlignment="center"
+            android:textAppearance="@style/alarm_motio"
+            app:layout_constraintTop_toBottomOf="@+id/twTitulo_cv4" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
 
 
     <Button
@@ -103,10 +93,10 @@
         android:layout_height="39dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/btn_bg"
-        android:text="@string/txtIniciarSesion"
+        android:text="@string/txtDesactivarAlarma"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/cardAlarma" />
 
     <Button
         android:id="@+id/btnRegistrarme"
@@ -115,7 +105,7 @@
         android:layout_height="39dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/btn_bg2"
-        android:text="@string/txtRegistrarme"
+        android:text="@string/txtPosponerAlarma"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

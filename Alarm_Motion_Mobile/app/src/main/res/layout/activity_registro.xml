@@ -36,7 +36,9 @@
         app:layout_constraintHorizontal_bias="0.267"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/homeAsUpIndicator" />
+        app:srcCompat="?attr/homeAsUpIndicator"
+        android:onClick="goToMainActivity"
+        />
 
     <ImageView
         android:id="@+id/imageView"

@@ -7,7 +7,7 @@
     <style name="alarm_motio">
 
         <item name="android:textSize">
-            36sp
+            32sp
         </item>
 
         <item name="android:textColor">
@@ -74,7 +74,10 @@
     </style>
 
 <style name="styletimepicker">
-    <item name="android:textSize">24sp</item>
+    <item name="android:textSize">21sp</item>
+    <item name="android:shadowRadius">
+        240
+    </item>
 </style>
 
 </resources>

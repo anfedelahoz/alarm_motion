@@ -26,4 +26,14 @@ public class ListarAlarmas extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void  goToEditAlarm(View view) {
+        Intent intent = new Intent(this, EditarAlarma.class);
+        startActivity(intent);
+    }
+
+    public void   goToLogin (View view) {
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+    }
+
 }

@@ -16,11 +16,10 @@
     <string name="txtCeluarContactoConfianza">Número celular contacto confianza</string>
     <string name="txtMensajeExitoAlarma">Éxito</string>
     <string name="txtAlarmaSonara">Alarma Sonará a las:</string>
-
-
+    <string name="txtPosponerAlarma">Posponer 10 Min:</string>
+    <string name="txtDesactivarAlarma">Desactivar:</string>
+    <string name="txtGuardar">Guardar</string>
     <string name="title_activity_ok_alarma">OkAlarma</string>
-
-
 
 
 
@@ -31,4 +30,5 @@
     <string name="previous">Previous</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_alarma_activa">AlarmaActiva</string>
 </resources>

@@ -34,6 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?attr/homeAsUpIndicator"
+        android:onClick="goToLogin"
         />
 
     <ImageButton
@@ -112,6 +113,21 @@
             />
 
 
+            <ImageButton
+                android:id="@+id/imageButtonEdit"
+                android:layout_width="36dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="250dp"
+                android:background="@android:drawable/ic_menu_edit"
+                android:onClick="goToEditAlarm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.92"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -166,6 +182,20 @@
                 android:minHeight="80dp"
                 android:switchMinWidth="70dp"
                 app:layout_constraintStart_toEndOf="@+id/twHora_cv1" />
+
+            <ImageButton
+                android:id="@+id/imageButtonEditcv2"
+                android:layout_width="36dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="250dp"
+                android:background="@android:drawable/ic_menu_edit"
+                android:onClick="goToEditAlarm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.92"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_input_add" />
             />
 
         </androidx.cardview.widget.CardView>
@@ -223,6 +253,21 @@
                 android:minHeight="80dp"
                 android:switchMinWidth="70dp"
                 app:layout_constraintStart_toEndOf="@+id/twHora_cv3" />
+
+            <ImageButton
+                android:id="@+id/imageButtonEditcv3"
+                android:layout_width="36dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="250dp"
+                android:background="@android:drawable/ic_menu_edit"
+                android:onClick="goToEditAlarm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.92"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_input_add" />
+            />
             />
         </androidx.cardview.widget.CardView>
 
@@ -283,6 +328,21 @@
                 android:trackTint="#FFFFFF"
                 android:trackTintMode="add"
                 app:layout_constraintStart_toEndOf="@+id/twHora_cv4" />
+
+            <ImageButton
+                android:id="@+id/imageButtonEditcv4"
+                android:layout_width="36dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="250dp"
+                android:background="@android:drawable/ic_menu_edit"
+                android:onClick="goToEditAlarm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.92"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_input_add" />
+            />
             />
         </androidx.cardview.widget.CardView>
 

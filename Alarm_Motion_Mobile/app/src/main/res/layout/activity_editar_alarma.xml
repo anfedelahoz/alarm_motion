@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".EditarAlarma"
     style="@style/AlarMotionStyle"
-    tools:context=".CreateAlarma">
+    >
+
 
     <TextView
         android:id="@+id/alarm_motio"
@@ -13,10 +15,10 @@
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="5dp"
         android:gravity="center_horizontal|top"
         android:lineSpacingExtra="-18sp"
-        android:text="@string/txtCrearAlarmas"
+        android:text="Editar"
         android:textAppearance="@style/alarm_motio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,22 +29,20 @@
         android:id="@+id/imageButton"
         android:layout_width="36dp"
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/btn_bg"
         app:layout_constraintEnd_toStartOf="@+id/alarm_motio"
         app:layout_constraintHorizontal_bias="0.267"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/homeAsUpIndicator"
-        android:onClick="goToListarAlarmas"
-        />
+        app:srcCompat="?attr/homeAsUpIndicator" />
 
 
     <ImageButton
         android:id="@+id/imageButtonGuardar"
         android:layout_width="36dp"
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
 
         android:onClick="goToOkAlarm"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,34 +51,99 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/checkbox_on_background" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAlarma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        app:cardBackgroundColor="#3C6255"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_motio"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/twTitulo_cv1"
+            android:layout_width="246dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:lineSpacingExtra="5sp"
+            android:text="Despertar"
+            android:textAppearance="@style/titulo1" />
+
+        <TextView
+            android:id="@+id/twHora_cv1"
+            android:layout_width="246dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:lineSpacingExtra="5sp"
+            android:text="6:00 A.M."
+            android:textAppearance="@style/alarm_motio"
+            android:textSize="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/twTitulo_cv1" />
+
+        <TextView
+            android:id="@+id/twDias_cv1"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:lineSpacingExtra="5sp"
+            android:text="lun  mar  mier  jue  vie"
+            android:textAppearance="@style/titulo4"
+            app:layout_constraintTop_toBottomOf="@+id/twHora_cv1" />
+
+        <Switch
+            android:id="@+id/swActivoAlarma_cv2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="40dp"
+            android:minHeight="80dp"
+            android:switchMinWidth="70dp"
+            app:layout_constraintStart_toEndOf="@+id/twHora_cv2" />
+        />
+
+
+    </androidx.cardview.widget.CardView>
+
     <TimePicker
         android:id="@+id/timePicker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="274dp"
+        android:layout_height="121dp"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+
         android:layout_marginEnd="16dp"
+        android:background="@drawable/pickertime"
 
-        android:background="#F7F9F2 "
-
-        android:textSize="52sp"
+        android:textSize="12sp"
         android:theme="@style/styletimepicker"
         android:timePickerMode="spinner"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alarm_motio" />
+        app:layout_constraintTop_toBottomOf="@+id/cardAlarma" />
 
     <TextView
-        android:id="@+id/twDias_cv1"
+        android:id="@+id/tvRepetir"
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginStart="-130dp"
         android:layout_marginTop="5dp"
-        android:lineSpacingExtra="5sp"
+        android:lineSpacingExtra="-5sp"
         android:text="Repetir"
         android:textAppearance="@style/titulo4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timePicker" />
 
@@ -86,64 +151,69 @@
         android:id="@+id/lydiasSemanas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:gravity="center_horizontal"
         android:paddingVertical="100dp"
         android:paddingTop="-100dp"
-        app:layout_constraintTop_toBottomOf="@+id/timePicker"
+        app:layout_constraintTop_toBottomOf="@+id/tvRepetir"
         tools:layout_editor_absoluteX="0dp">
 
         <Button
             android:id="@+id/btnlun"
-            android:layout_width="58dp"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:width="30dp"
-            android:text="lun" />
+            android:text="lun"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnmar"
             android:layout_width="56dp"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="mar" />
+            android:text="mar"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnmie"
-            android:layout_width="51dp"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="mie" />
+            android:text="mie"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnjue"
-            android:layout_width="52dp"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="jue" />
+            android:text="jue"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnvie"
-            android:layout_width="49dp"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="vie" />
+            android:text="vie"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnsab"
             android:layout_width="56dp"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="sab" />
+            android:text="sab"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btndom"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="dom" />
+            android:text="dom"
+            android:textSize="14sp" />
     </LinearLayout>
-
 
     <TextView
         android:id="@+id/twvibracion"
@@ -151,19 +221,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginStart="-130dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="40dp"
         android:lineSpacingExtra="5sp"
         android:text="Vibración"
         android:textAppearance="@style/titulo4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
+        app:layout_constraintTop_toBottomOf="@+id/tvRepetir" />
 
     <LinearLayout
         android:id="@+id/lyvibracion"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="170dp"
         android:gravity="center_horizontal"
         android:paddingVertical="00dp"
         android:paddingTop="-100dp"
@@ -172,36 +242,38 @@
 
         <Button
             android:id="@+id/btninactivo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:width="30dp"
-            android:text="inactivo" />
+            android:text="inactivo"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnalto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="alto" />
+            android:text="alto"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnmedio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="medio" />
+            android:text="medio"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnbajo"
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
             android:layout_gravity="center_vertical"
-            android:text="bajo" />
+            android:text="bajo"
+            android:textSize="14sp" />
 
 
     </LinearLayout>
-
 
     <TextView
         android:id="@+id/twSonido"
@@ -209,7 +281,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginStart="-130dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:lineSpacingExtra="5sp"
         android:text="Sonido"
         android:textAppearance="@style/titulo4"
@@ -221,7 +293,7 @@
         android:id="@+id/lysonido"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="320dp"
         android:gravity="center_horizontal"
         android:paddingVertical="00dp"
         android:paddingTop="-100dp"
@@ -232,30 +304,33 @@
 
         <Button
             android:id="@+id/btninactivosonido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:textSize="14sp"
             android:layout_gravity="center_vertical"
-            android:width="30dp"
             android:text="inactivo" />
 
         <Button
             android:id="@+id/btnaltosonido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:textSize="14sp"
             android:layout_gravity="center_vertical"
             android:text="alto" />
 
         <Button
             android:id="@+id/btnmediosonido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:textSize="14sp"
             android:layout_gravity="center_vertical"
             android:text="medio" />
 
         <Button
             android:id="@+id/btnbajosonido"
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:textSize="14sp"
             android:layout_gravity="center_vertical"
             android:text="bajo" />
 
@@ -267,8 +342,8 @@
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="357dp"
         android:layout_height="33dp"
-        android:layout_marginStart="-60dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="55dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="@string/txtCeluarContactoConfianza"
@@ -297,6 +372,19 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
 
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        style="@style/AlarMotionStyle"
+        android:layout_width="141dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/txtGuardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDuracionAlarma"
+        android:onClick="goToListarAlarmas"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

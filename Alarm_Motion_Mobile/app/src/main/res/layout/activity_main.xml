@@ -102,14 +102,14 @@
         style="@style/AlarMotionStyle"
         android:layout_width="139dp"
         android:layout_height="39dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/btn_bg2"
+        android:onClick="goToRegistroActivity"
         android:text="@string/txtRegistrarme"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion"
-        android:onClick="goToRegistroActivity"
 
         />
 
