@@ -1,7 +1,7 @@
 # Alarm Motion
 
 
-# APP- ANDROID
+# App- Android
 
 ## IDE de desarrollo
 Android Studio Dolphin | 2021.3.1
