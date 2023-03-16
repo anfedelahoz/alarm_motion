@@ -39,8 +39,8 @@ buildFeatures {
 ## Instrucciones ejecución del proyecto en Android Studio
 - Clonar el respositorio, ingresar a la carpeta /Alarm_Motion_Mobile
 - Ejecutar Android Studio en modo administrador y abrir la carpeta mencionada en el paso anterior
-## Capturas de pantalla
-
+## APK
+[alarm_motion_apk.zip](https://github.com/anfedelahoz/alarm_motion/files/10985986/alarm_motion_apk.zip)
 
 
 
