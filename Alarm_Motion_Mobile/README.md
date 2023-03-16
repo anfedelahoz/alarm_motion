@@ -1,6 +1,4 @@
 # Alarm Motion Mobile
-# Alarm Motion
-
 
 # App- Android
 
