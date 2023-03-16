@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.alarm-nav{
+    background-color: #3C6255;
+}
+
+.nav-link{
+    color:#EAE7B1;
+    font-family: 'Roboto';
+    font-style: bold;
+    line-height: 24px;
+}
