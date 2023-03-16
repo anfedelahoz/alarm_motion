@@ -10,7 +10,7 @@ Si aparece un error, actualice @ angular-cli
 
 ## Servidor de desarrollo
 
-Ejecute `ng serve` para un servidor de desarrollo. Navegue a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambia cualquiera de los archivos de origen.
+Ejecute `ng serve` para  iniciar el servidor de desarrollo. Navegue a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambia cualquiera de los archivos de origen.
 
 ## Más ayuda
 
