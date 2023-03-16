@@ -8,9 +8,10 @@
 
 ## Video demostrativo
 Para ver las aplicaciones Web y Mobile en ejecución, junto con la comparación de los Mockups reproduzca el siguiente vídeo.
-https://www.youtube.com/watch?v=Xg52z7hLEdg&feature=youtu.be
+
+[Vídeo demo y comparación entregable final](https://www.youtube.com/watch?v=Xg52z7hLEdg&feature=youtu.be)
 
 # Mockups
 Puede ver los Mockups para Web y Mobile en el siguiente enlace:
 
-https://www.figma.com/file/lxrUAE43anXUgqQfTKSmvT/Alarm-Motion-Mockup?node-id=341-56776&t=wNCHgoRol4fupvc0-0
+[Mockups Web y Mobile](https://www.figma.com/file/lxrUAE43anXUgqQfTKSmvT/Alarm-Motion-Mockup?node-id=341-56776&t=wNCHgoRol4fupvc0-0)
